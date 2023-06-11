@@ -3,34 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* to bring the overall container to the center  */
 body{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     height: 100vh;
 }
+/* set height,display of the container */
 .container
 {
-    height: 400px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
-    width: 300px;
-    background-color: black;
+    gap: 1rem;
+    width: 350px;
+    background-color:#27374D;
     border-radius: 10px;
 }
+/*  */
 .heading-icon
 {
-    color: thistle;
+    color:#DDE6ED;
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 5px;
+    font-size: 1.25rem;
+    letter-spacing: .75px;
     justify-content: center;
-    font-family: sans-serif;
+    font-family: 'Roboto Serif', serif;
+    font-weight: bold;
 }
 .temp-icon
 {
@@ -46,36 +52,50 @@ body{
     align-items: center;
     outline: none;
     border: none;
+    margin-bottom: 1rem;
 }
 input{
     border: none;
-    padding-top: 10px;
-    padding-bottom: 6.2px;
+    padding-top: 15px;
+    padding-bottom: 13px;
     text-align: center;
     outline: none;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EEEEEE;
+    font-family: 'Rubik', sans-serif;
     border-radius: 8px 0 0 8px;
-    font-size:medium;
+    font-size:1.2rem;
     font-weight: bold;
 }
-input:hover{
-    background-color: rgb(182, 247, 157);
+input::placeholder
+{
+    color: #222831;
+    font-weight:bold ;
 }
+/* change color on hover */
+input:hover{
+    background-color:#EAFFD0;
+}
+/* set padding,color for icon */
 .icon
 {
-    padding-left: 10px;
-    padding-top: 11px;
-    padding-bottom: 4.9px;
-    background-color: turquoise;
-    padding-right: 10px;
+    padding-left: 9px;
+    padding-top: 15px;
+    padding-bottom: 13.75px;
+    background-color:#A1DFFF;
+    padding-right: 13px;
+    font-size: 1.2rem;
     border-radius: 0px 8px 8px 0;
-    color: white;
-}
-button{
-   padding-block: 5px;
-   padding-inline: 10px;
     color: black;
-    font-size: 1.1rem;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+/* set width and height for button */
+button{
+   padding-block: 9px;
+   padding-inline: 15px;
+    color: black;
+    font-size: 1.2rem;
     font-weight:bold;
     border-radius: 10px;
     border: none;
@@ -84,4 +104,51 @@ button{
 button:hover
 {
     background-color: rgba(241, 10, 10, 0.938);
+}
+/* media query for desktop i,e >=1200 */
+@media only screen and (min-width:1200px) {
+    body{
+        /* background-color: burlywood; */
+        justify-content: center;
+    }
+    .container{
+        height: 50vh;
+        width: 55vh;
+        gap:2rem;
+        border-radius: 15px;
+    }
+    .heading-icon
+    {
+        font-size: 1.5rem;
+        gap:10px;
+    }
+    .input-area
+    {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    input{
+        width: 60%;
+        padding-block: 20px;
+        font-size: 1.4rem;
+    }
+    input::placeholder
+    {
+        font-size: 1.4rem;
+    }
+    .icon
+    {
+        padding-block: 20px;
+        font-size: 1.4rem;
+        padding-inline: 19px;
+    }
+   button
+   {
+       margin-top: -5px;
+       padding-block:20px;
+       padding-inline:25px;
+       font-size: 1.4rem;
+       border-radius: 15px;
+
+   } 
 }
