@@ -112,16 +112,17 @@ button:hover
         justify-content: center;
     }
     .container{
-        height: 75vh;
-        width: 80vh;
-        max-width: 600px;
-        max-height: 500px;
-        gap:2rem;
-        border-radius: 15px;
+        /* height: 75vh; */
+        width: 65%;
+        /* max-width: 600px; */
+        min-height: 600px; 
+        gap:2.5rem;
+        border-radius: 20px;
     }
     .heading-icon
     {
-        font-size: 1.4rem;
+        font-size: 2rem;
+        letter-spacing: 1px;
         gap:10px;
     }
     .input-area
