@@ -24,7 +24,7 @@ body{
     background-color:#27374D;
     border-radius: 10px;
 }
-/*  */
+/* styling for heading icon area */
 .heading-icon
 {
     color:#DDE6ED;
@@ -54,6 +54,7 @@ body{
     border: none;
     margin-bottom: 1rem;
 }
+/* styling for input */
 input{
     border: none;
     padding-top: 15px;
@@ -66,6 +67,7 @@ input{
     font-size:1.2rem;
     font-weight: bold;
 }
+/* to change the property of placeholder */
 input::placeholder
 {
     color: #222831;
@@ -101,6 +103,7 @@ button{
     border: none;
     background-color: red;
 }
+/* hover property on button */
 button:hover
 {
     background-color: rgba(241, 10, 10, 0.938);
